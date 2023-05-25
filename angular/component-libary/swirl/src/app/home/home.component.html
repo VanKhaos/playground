@@ -1,1 +1,15 @@
-<p>home works!</p>
+<swirl-form-control label="My Input">
+  <swirl-text-input
+    #myInput
+    show-character-counter="true"
+    rows="2"
+    max-length="250"
+    value="{{ inputText }}"
+  ></swirl-text-input>
+</swirl-form-control>
+
+<swirl-button
+  icon="<swirl-icon-add></swirl-icon-add>"
+  label="Delete Text"
+  (click)="onClick()"
+></swirl-button>
