@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
   }
 
   onClick() {
+    console.log("Befor:",this.myInput.nativeElement.value);
     this.myInput.nativeElement.value = '';
+    console.log("After:",this.myInput.nativeElement.value);
   }
-
 }
